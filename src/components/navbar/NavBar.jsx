@@ -1,5 +1,8 @@
 import React from "react";
 import "./NavBar.css";
+import serachIcon from "..//../assets/search-icon.svg";
+import cart from "..//../assets/cart.svg";
+import arrow from "..//../assets/arrow.svg";
 function Navbar() {
   return (
     <>
@@ -8,20 +11,32 @@ function Navbar() {
           {/* <img src={logo} alt="Sekalla Logo" /> */}
           <h1>Sekalla</h1>
         </div>
-        <div className="navbar__search"></div>
-        <input
-          type="text"
-          className="navbar__search__input"
-          placeholder="البحث عن مواد"
-        />
-        <span>{/* <img src={serachIcon}></img> */}</span>
-        {/* <img src={cart}></img> */}
-        <div className="navbar__user"></div>
-        <div className="login">
-          <p>تسجيل الدخول</p>
-        </div>
-        <div className="register">
-          <p>انشاء حساب</p>
+        <div className="navbar__container">
+          <div className="navbar__search">
+            <input
+              type="text"
+              className="navbar__search__input"
+              placeholder="البحث عن مواد"
+            />
+            <span>
+              <img
+                src={serachIcon}
+                alt="search icon"
+                className="search__icon"
+              ></img>
+            </span>
+            <img className="navbar__cart" src={cart}></img>
+          </div>
+
+          <div className="navbar__user">
+            <div className="login">
+              <p>تسجيل الدخول</p>
+            </div>
+            <div className="register">
+              <img className="register__arrow" src={arrow}></img>
+              <p>انشاء حساب</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

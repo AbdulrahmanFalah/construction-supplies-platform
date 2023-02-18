@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap");
 
 :root {
-  --font-family: "Kanit", sans-serif;
-
+  font-family: "Noto Kufi Arabic";
   --color-bg: #ffff;
   --color-footer: #152533;
   --color-text-main: black;
   --color-text-secondery: #fff;
-  --color-subtext: #ff8a71;
+  --color-subtext: #666666;
 }

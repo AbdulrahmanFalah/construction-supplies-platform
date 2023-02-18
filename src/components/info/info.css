@@ -1,0 +1,14 @@
+.info {
+  background-image: url("../../assets/Component1.svg");
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  text-align: end;
+}
+
+.info__text {
+  color: var(--color-text-secondery);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
