@@ -1,0 +1,12 @@
+button {
+  color: var(--color-text-secondery);
+  background-color: var(--color-text-main);
+  border-radius: 20px;
+  min-width: 185px;
+  width: 101px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 20px;
+  cursor: pointer;
+}

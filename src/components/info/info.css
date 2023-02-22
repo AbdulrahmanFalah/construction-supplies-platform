@@ -1,14 +1,28 @@
 .info {
   background-image: url("../../assets/Component1.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 60vh;
   width: 100%;
-  text-align: end;
+  display: flex;
 }
 
 .info__text {
+  padding-right: 8rem;
+  padding-top: 3rem;
   color: var(--color-text-secondery);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  text-align: start;
+}
+.info h1 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.info__text p {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: 1rem;
+  text-align: start;
 }

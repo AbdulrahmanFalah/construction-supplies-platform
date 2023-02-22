@@ -1,0 +1,12 @@
+.title {
+  font-size: 28px;
+  margin-top: 4rem;
+}
+/* .store--grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, fit-content(100%));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+} */
