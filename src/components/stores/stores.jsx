@@ -3,7 +3,7 @@ import "./stores.css";
 import phoneCallIcon from "../../assets/phone-call.svg";
 import locationIcon from "../../assets/location-icon.svg";
 import storeData from "../../store-data/store-data.json";
-
+import storeImg from "../../assets/store-img.png";
 function Stores() {
   const storeElements = storeData.map((store) => {
     return (
@@ -31,7 +31,7 @@ function Stores() {
             </p>
           </div>
         </div>
-        <img src={store.storeImg} alt="store" className="store__img" />
+        <img src={storeImg} alt="store" className="store__img" />
       </div>
     );
   });

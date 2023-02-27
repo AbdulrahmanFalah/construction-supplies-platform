@@ -4,7 +4,7 @@
     "storeName": "سكلة كرادة داخل",
     "storeLocation": "الكرادة",
     "phoneNumber": "07888888888",
-    "storeImage": "../assets/store-img.svg"
+    "storeImage": "../../assets/store-img.svg"
   },
   {
     "id": 2,
