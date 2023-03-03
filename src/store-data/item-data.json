@@ -8,46 +8,46 @@
   {
     "id": 2,
     "itemName": "اسمنت اعتيادي",
-    "storeName": "سكلة كرادة داخل",
+    "storeName": " الكرادة خارج ",
     "itemPrice": "6,000"
   },
 
   {
     "id": 3,
-    "itemName": "سكلة كرادة داخل",
+    "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
     "itemPrice": " 6,000"
   },
 
   {
     "id": 4,
-    "itemName": "سكلة كرادة داخل",
+    "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
     "itemPrice": "6,000"
   },
   {
     "id": 1,
-    "itemName": "سكلة كرادة داخل",
+    "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
     "itemPrice": 6000
   },
   {
     "id": 2,
     "itemName": "اسمنت اعتيادي",
-    "storeName": "سكلة كرادة داخل",
+    "storeName": "الكرادة ",
     "itemPrice": 6000
   },
 
   {
     "id": 3,
-    "itemName": "سكلة كرادة داخل",
+    "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
     "itemPrice": 6000
   },
 
   {
     "id": 4,
-    "itemName": "سكلة كرادة داخل",
+    "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
     "itemPrice": 6000
   }

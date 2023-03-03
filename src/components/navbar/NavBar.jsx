@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 import serachIcon from "..//../assets/search-icon.svg";
 import cart from "..//../assets/cart.svg";
@@ -8,13 +9,18 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar__user">
-          <div className="login">
-            <p>تسجيل الدخول</p>
-          </div>
-          <div className="register">
-            <p>انشاء حساب</p>
-            <img className="register__arrow" src={arrow}></img>
-          </div>
+          <Link to="/login">
+            <div className="login">
+              <p>تسجيل الدخول</p>
+            </div>
+          </Link>
+          <Link to="/register">
+            <div className="register">
+              <p>انشاء حساب</p>
+              <img className="register__arrow" src={arrow}></img>
+            </div>
+          </Link>
+
           <img className="navbar__cart" src={cart}></img>
         </div>
         <div className="navbar__search">
@@ -35,7 +41,9 @@ function Navbar() {
 
         <div className="navbar__logo">
           {/* <img src={logo} alt="Sekalla Logo" /> */}
-          <h1>Sekalla</h1>
+          <Link to="/">
+            <h1>Sekalla</h1>
+          </Link>
         </div>
       </div>
     </>

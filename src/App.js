@@ -1,16 +1,20 @@
 import React from "react";
 import "./App.css";
-import { Navbar, Info } from "./components/index.js";
-import { NearbyStores, Category, Footer } from "./containers/index.js";
+import { Routes, Route } from "react-router-dom";
+import {
+  HomePage,
+  LoginPage,
+  RegisterPage,
+  RegisterPage1,
+} from "./pages/index.js";
 function App() {
   return (
-    <>
-      <Navbar />
-      <Info />
-      <NearbyStores />
-      <Category />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+      <Route path="/register1" element={<RegisterPage1 />} />
+    </Routes>
   );
 }
 

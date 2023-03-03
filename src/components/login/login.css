@@ -1,0 +1,26 @@
+.form {
+  height: 100%;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+  gap: 18%;
+}
+.form__container p {
+  width: 100%;
+}
+.form__container a {
+  font-weight: bold;
+  color: #de8922;
+  text-decoration: none;
+}
+.img--form {
+  height: 500px;
+}
+.icon {
+  width: 16px;
+  margin: 0 0 0 1rem;
+  position: relative;
+  top: 4.5px;
+}
