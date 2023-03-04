@@ -5,3 +5,5 @@ export { default as Button } from "./button/button";
 export { default as Item } from "./item/item";
 export { default as Login } from "./login/login";
 export { default as Input } from "./input/input";
+export { default as InfoLine } from "./infoline/infoLine";
+export { default as StoreProfile } from "./storeprofile/storeProfile";

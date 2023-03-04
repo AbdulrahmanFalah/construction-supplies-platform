@@ -2,8 +2,8 @@ import React from "react";
 import "./item.css";
 import item from "../../store-data/item-data.json";
 import itemimg from "../../assets/cement.webp";
-function Item() {
-  let itemCards = item.map((item) => {
+function Item(proops) {
+  let itemCards = item.slice(0, proops.num).map((item) => {
     return (
       <>
         <div className="item__card">

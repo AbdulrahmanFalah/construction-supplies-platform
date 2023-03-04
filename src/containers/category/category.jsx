@@ -1,8 +1,17 @@
 import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./category.css";
 import Item from "../../components/item/item.jsx";
 import { Button } from "../..///components///index.js";
 function Category() {
+  const [showNum, setShowNum] = useState(6);
+  const handleShowAll = () => {
+    setShowNum(showNum === 6 ? 100 : 6);
+    {
+      console.log(showNum);
+    }
+  };
   const categories = [
     "الكل",
     "اسمنت",
@@ -13,7 +22,7 @@ function Category() {
     "شيش",
     "كاشي",
   ];
-  const [selectedCategory, setSelectedCategory] = React.useState("الكل");
+  const [selectedCategory, setSelectedCategory] = useState("الكل");
 
   return (
     <>
@@ -33,11 +42,15 @@ function Category() {
           ))}
         </ul>
         <div className="item--container">
-          <Item category={selectedCategory} />
+          <Item category={selectedCategory} num={showNum} />
         </div>
       </div>
       <div className="button--container">
-        <Button text="عرض الكل" />
+        <Link to="/catagory">
+          <Button onClick={handleShowAll} text="عرض الكل" />
+        </Link>
+
+        {console.log(showNum)}
       </div>
     </>
   );

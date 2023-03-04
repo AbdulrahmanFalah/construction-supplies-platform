@@ -18,7 +18,7 @@ function Register() {
             <Input type="text" icon={phonIcon} text="  العنوان" />
             <Input type="password" icon={password} text=" الجنس " />
           </div>
-          <Link to="/">
+          <Link to="/profile">
             <Button text=" انشاء الحساب"></Button>
           </Link>
 

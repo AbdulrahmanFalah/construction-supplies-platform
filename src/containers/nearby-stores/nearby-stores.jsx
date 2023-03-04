@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./nearby-stores.css";
 import { Stores, Button } from "../..///components///index.js";
 function NearbyStores() {
@@ -8,7 +9,9 @@ function NearbyStores() {
       <>
         <Stores />
         <div className="button--container">
-          <Button text="عرض الكل" />
+          <Link to="/nearby-stores">
+            <Button text="عرض الكل" />
+          </Link>
         </div>
       </>
     </>

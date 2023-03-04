@@ -3,52 +3,102 @@
     "id": 1,
     "itemName": " شيش تسليح",
     "storeName": " الكرادة خارج ",
-    "itemPrice": "50,000"
+    "itemPrice": "50,000",
+    "catagory": "اسمنت"
   },
   {
     "id": 2,
     "itemName": "اسمنت اعتيادي",
     "storeName": " الكرادة خارج ",
-    "itemPrice": "6,000"
+    "itemPrice": "6,000",
+    "catagory": "اسمنت"
   },
 
   {
     "id": 3,
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
-    "itemPrice": " 6,000"
+    "itemPrice": " 6,000",
+    "catagory": "اسمنت"
   },
 
   {
     "id": 4,
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
-    "itemPrice": "6,000"
+    "itemPrice": "6,000",
+    "catagory": "اسمنت"
   },
   {
-    "id": 1,
+    "id": 5,
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
-    "itemPrice": 6000
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
   },
   {
-    "id": 2,
+    "id": 6,
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة ",
-    "itemPrice": 6000
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
   },
 
   {
-    "id": 3,
+    "id": 7,
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
-    "itemPrice": 6000
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
   },
 
   {
-    "id": 4,
+    "id": 8,
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
-    "itemPrice": 6000
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
+  },
+  {
+    "id": 9,
+    "itemName": "اسمنت اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
+  },
+  {
+    "id": 10,
+    "itemName": "اسمنت اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
+  },
+  {
+    "id": 11,
+    "itemName": "اسمنت اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
+  },
+  {
+    "id": 12,
+    "itemName": "اسمنت اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
+  },
+  {
+    "id": 13,
+    "itemName": "اسمنت اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
+  },
+  {
+    "id": 14,
+    "itemName": "اسمنت اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "اسمنت"
   }
 ]
