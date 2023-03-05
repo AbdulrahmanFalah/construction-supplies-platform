@@ -3,20 +3,31 @@
   top: 0;
   padding-right: 2rem;
   padding-left: 2rem;
-  height: 70px;
-
+  /* height: 140px; */
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(5px);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.mobile-navbar {
+  width: 100%;
+  display: none;
+  margin-top: -15px;
+}
+.navbar__search-mobile {
+  width: 100%;
+}
+.mobile-input {
+  width: 100%;
 }
 .navbar__logo {
   margin-right: 2rem;
   position: relative;
   cursor: pointer;
 }
+
 .navbar__container {
   min-width: 85%;
   display: flex;
@@ -24,6 +35,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar__search {
   width: 50%;
   display: flex;
@@ -33,6 +45,7 @@
   padding: 0;
   margin: 0;
 }
+
 .navbar__search__input {
   display: flex;
   padding-left: 30px;
@@ -48,6 +61,7 @@
   color: var(--color-text-main);
   text-align: start;
 }
+
 .search__icon {
   position: absolute;
   bottom: 7px;
@@ -56,32 +70,36 @@
   height: 24px;
   cursor: pointer;
 }
+
 .navbar__search__input::placeholder {
   color: var(--color-subtext);
 }
+
 .navbar__cart {
   height: 48px;
   margin-right: 1rem;
   cursor: pointer;
 }
+
 .navbar__user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
 .login {
   font-weight: 400;
   font-size: 16px;
   line-height: 46px;
   cursor: pointer;
 }
+
 .register {
   margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-width: 185px;
   width: 101px;
   height: 40px;
@@ -94,10 +112,172 @@
   padding: 0 20px;
   cursor: pointer;
 }
+
 .login p {
   width: 101px;
 }
 
 .register__arrow {
+  width: 30px;
   margin-right: 10px;
+}
+.search__input--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust navbar styles for small screens */
+  .navbar {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .navbar__container {
+    min-width: auto;
+  }
+
+  .navbar__search {
+    width: 30%;
+  }
+
+  .navbar__search__input {
+    font-size: 14px;
+  }
+
+  /* .navbar__user {
+    margin-right: auto;
+  } */
+
+  .login p {
+    display: none;
+  }
+  .register {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar__logo {
+    margin-right: 0.5rem;
+  }
+
+  .navbar__container {
+    min-width: 70%;
+  }
+
+  .navbar__search {
+    width: 40%;
+  }
+
+  .navbar__search__input {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .search__icon {
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar__cart {
+    height: 40px;
+  }
+
+  .login {
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .register {
+    min-width: 90px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0 10px;
+  }
+  .register p {
+    font-size: 10px;
+  }
+  .register__arrow {
+    display: none;
+  }
+  .login p {
+    width: 80px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    height: 100px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .navbar__search-web {
+    visibility: hidden;
+  }
+  .mobile-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .navbar {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .navbar__logo {
+    margin-right: 0.5rem;
+  }
+
+  .navbar__container {
+    min-width: 70%;
+  }
+
+  .navbar__search {
+    width: 40%;
+  }
+
+  .navbar__search__input {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .search__icon {
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar__cart {
+    height: 40px;
+  }
+
+  .login {
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .register {
+    min-width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0 10px;
+  }
+
+  .login p {
+    width: 80px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar__search-mobile {
+    width: 100%;
+  }
 }

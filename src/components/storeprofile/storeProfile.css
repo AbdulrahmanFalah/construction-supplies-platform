@@ -1,15 +1,15 @@
-.store__info {
+.profile__store__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 4rem);
+  width: calc(60% - 4rem);
   margin: 4rem 2rem 0 2rem;
   background-color: var(--color-bg-second);
   padding: 2rem;
   border-radius: 0.5rem;
 }
-.store__img {
+.profile__store__img {
   height: 120px;
   width: 120px;
   object-fit: cover;

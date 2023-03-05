@@ -101,5 +101,19 @@
     "storeName": "الكرادة",
     "itemPrice": 6000,
     "catagory": "اسمنت"
+  },
+  {
+    "id": 13443,
+    "itemName": "رمل احمر",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "رمل"
+  },
+  {
+    "id": 124,
+    "itemName": "كاشي اعتيادي",
+    "storeName": "الكرادة",
+    "itemPrice": 6000,
+    "catagory": "كاشي"
   }
 ]

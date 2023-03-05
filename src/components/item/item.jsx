@@ -5,9 +5,8 @@ import itemImg from "../../assets/cement.webp";
 
 function Item({ selectedCategory }) {
   let filteredItems = itemData.filter(
-    (item) => selectedCategory === "الكل" || item.category === selectedCategory
+    (item) => item.catagory === selectedCategory || selectedCategory === "الكل"
   );
-
   let itemCards = filteredItems.map((item) => {
     return (
       <div className="item__card" key={item.id}>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../components/index.js";
 import { Button, Input } from "..//components/index.js";
+import "./register.css";
 import nameIcon from "../assets/id-card.svg";
 import phonIcon from "../assets/phone-call.svg";
 import password from "../assets/padlock.svg";
@@ -25,7 +26,9 @@ function Register() {
 
           <p>
             لديك حساب بالفعل؟
-            <a href="/login">سجل الدخول </a>
+            <a href="/login" style={{ color: "#de8922" }}>
+              سجل الدخول{" "}
+            </a>
           </p>
         </div>
 
