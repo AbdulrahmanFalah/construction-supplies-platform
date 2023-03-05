@@ -4,7 +4,8 @@
     "itemName": " شيش تسليح",
     "storeName": " الكرادة خارج ",
     "itemPrice": "50,000",
-    "catagory": "اسمنت"
+    "catagory": "اسمنت",
+    "itemImage": "https://www.google.com/search?q=cement+image&client=firefox-b-d&tbm=isch&sxsrf=AJOqlzW_8RkfHHoYMu9jaygqvZ0kN3k2zQ:1678001337604&source=lnms&sa=X&ved=2ahUKEwjlgKSNosT9AhWNRvEDHestA6QQ_AUoAXoECAoQAw&biw=1536&bih=731&dpr=1.25#imgrc=aSKTlT05aAWuiM"
   },
   {
     "id": 2,
@@ -19,7 +20,7 @@
     "itemName": "اسمنت اعتيادي",
     "storeName": "الكرادة",
     "itemPrice": " 6,000",
-    "catagory": "اسمنت"
+    "catagory": "رمل"
   },
 
   {

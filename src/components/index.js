@@ -7,3 +7,4 @@ export { default as Login } from "./login/login";
 export { default as Input } from "./input/input";
 export { default as InfoLine } from "./infoline/infoLine";
 export { default as StoreProfile } from "./storeprofile/storeProfile";
+export { default as Model } from "./Model/Model";

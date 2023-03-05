@@ -8,7 +8,6 @@ import { Category } from "../../containers";
 function storeProfile() {
   return (
     <>
-      {" "}
       <div className="store__info">
         <div className="store__info__container">
           <h1>سكلة 14 رمضان للمواد الانشائية</h1>
@@ -21,7 +20,7 @@ function storeProfile() {
             رقم الهاتف:07788888888
           </p>
         </div>
-        <img className="store__img" src={storeImg} />
+        <img className="store__img" src={storeImg} alt="" />
       </div>
       <Category></Category>
     </>

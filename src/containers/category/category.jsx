@@ -3,15 +3,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./category.css";
 import Item from "../../components/item/item.jsx";
-import { Button } from "../..///components///index.js";
+import { Button, Model } from "../../components/index.js";
+
 function Category() {
-  const [showNum, setShowNum] = useState(6);
-  const handleShowAll = () => {
-    setShowNum(showNum === 6 ? 100 : 6);
-    {
-      console.log(showNum);
-    }
-  };
   const categories = [
     "الكل",
     "اسمنت",
@@ -23,6 +17,7 @@ function Category() {
     "كاشي",
   ];
   const [selectedCategory, setSelectedCategory] = useState("الكل");
+  const [showModel, setShowModel] = useState(false);
 
   return (
     <>
@@ -41,17 +36,22 @@ function Category() {
             </li>
           ))}
         </ul>
-        <div className="item--container">
-          <Item category={selectedCategory} num={showNum} />
+        <div
+          className="item--container"
+          onClick={() => {
+            setShowModel(true);
+          }}
+        >
+          <Item selectedCategory={selectedCategory} />
         </div>
       </div>
       <div className="button--container">
         <Link to="/catagory">
-          <Button onClick={handleShowAll} text="عرض الكل" />
+          <Button text="عرض الكل" />
         </Link>
-
-        {console.log(showNum)}
       </div>
+
+      {showModel && <Model closeModel={setShowModel} />}
     </>
   );
 }

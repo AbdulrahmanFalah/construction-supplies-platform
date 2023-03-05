@@ -5,11 +5,12 @@ import phoneCallIcon from "../../assets/phone-call.svg";
 import locationIcon from "../../assets/location-icon.svg";
 import storeData from "../../store-data/store-data.json";
 import storeImg from "../../assets/store-img.png";
+
 function Stores() {
   const storeElements = storeData.map((store) => {
     return (
-      <Link to="/store">
-        <div className="store" key={store.id}>
+      <Link to="/store" key={store.id}>
+        <div className="store">
           <div className="store__info">
             <div className="store__info__text">
               <h1>{store.storeName}</h1>
