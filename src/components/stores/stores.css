@@ -31,6 +31,7 @@
 }
 
 .store__info__text {
+  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -48,4 +49,26 @@
 .store__info__location--icon {
   height: 14px;
   margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .store--grid {
+    gap: 10px;
+  }
+  .store {
+    margin: 0 1rem;
+  }
+  .store__info {
+    margin: 1rem;
+  }
+  .store__img {
+    width: 80px;
+    height: 80px;
+  }
+  .store__info__text h1 {
+    font-size: 16px;
+  }
+  .store__info__text p {
+    font-size: 12px;
+  }
 }

@@ -6,3 +6,5 @@ export { default as Profile } from "./profile";
 export { default as CatagoryPage } from "./catagoryPage";
 export { default as StoresPage } from "./storesPage";
 export { default as StorePage } from "./storePage";
+export { default as CartPage } from "./cart/cartPage.jsx";
+export { default as StoreDashbord } from "./store-dashbord/StoreDashbord.jsx";

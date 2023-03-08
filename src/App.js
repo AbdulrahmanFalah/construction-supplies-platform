@@ -10,6 +10,8 @@ import {
   CatagoryPage,
   StoresPage,
   StorePage,
+  CartPage,
+  StoreDashbord,
 } from "./pages/index.js";
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <Route path="/catagory" element={<CatagoryPage />} />
       <Route path="/nearby-stores" element={<StoresPage />} />
       <Route path="/store" element={<StorePage />} />
+      <Route path="/cart" element={<CartPage />} />
+      <Route path="/store-dashbord" element={<StoreDashbord />} />
     </Routes>
   );
 }

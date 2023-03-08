@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../button/button";
+
 import "./NavBar.css";
 import serachIcon from "..//../assets/search-icon.svg";
 import cart from "..//../assets/cart.svg";
@@ -26,8 +26,9 @@ function Navbar() {
                 ></img>
               </div>
             </Link>
-
-            <img className="navbar__cart" src={cart} alt="cart icon"></img>
+            <Link to="/cart">
+              <img className="navbar__cart" src={cart} alt="cart icon"></img>
+            </Link>
           </div>
           <div className="navbar__search navbar__search-web ">
             <span>

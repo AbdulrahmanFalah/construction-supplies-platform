@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 200px;
-  height: 280px;
+  height: 325px;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--color-bg-second);
@@ -42,7 +42,8 @@
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-.item__card__info__store {
+.item__card__info__store,
+.count--title {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 0.5rem;
@@ -50,6 +51,27 @@
 .item__card__info__price {
   font-size: 14px;
   font-weight: bold;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item--count {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item--count span {
+  font-size: 12px;
+}
+.size {
+  width: 8px;
+  margin: 0.4rem;
 }
 @media screen and (max-width: 890px) {
   .item--grid {

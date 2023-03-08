@@ -1,9 +1,13 @@
 .info-line {
-  width: 50%;
-  height: 100%;
-  margin-top: 4rem;
+  width: 100%;
+  background-color: var(--color-footer);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.info-line__value {
+  margin-top: 1rem;
+  font-size: 14px;
 }
