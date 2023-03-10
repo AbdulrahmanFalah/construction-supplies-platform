@@ -29,13 +29,14 @@
   font-weight: 300;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   .info__text h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    width: 70%;
   }
   .info__text p {
-    font-size: 1.5rem;
-    line-height: rem;
+    font-size: 1rem;
+    line-height: 26px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -43,7 +44,7 @@
     background-image: url("../../assets/Component1.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+
     width: 100%;
     display: flex;
   }
@@ -53,17 +54,14 @@
     color: var(--color-text-secondery);
     text-align: start;
   }
-  .info h1 {
-    display: inline-block;
-    font-size: 2.6rem;
-    font-weight: 600;
+}
+@media screen and (max-width: 380px) {
+  .info__text h1 {
+    font-size: 1rem;
   }
   .info__text p {
-    width: 100%;
+    width: 70%;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.5rem;
-    margin-top: 1rem;
-    text-align: start;
   }
 }

@@ -1,9 +1,10 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "./login.css";
 import { Button, Input } from "../index";
 import img from "../../assets/logpage.svg";
 import phoneCall from "../../assets//phone-call.svg";
 import password from "../../assets/padlock.svg";
+import axios from "axios";
 
 function Login() {
   return (

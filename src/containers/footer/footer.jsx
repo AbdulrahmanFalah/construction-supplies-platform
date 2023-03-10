@@ -5,10 +5,9 @@ import { emailWhite, phoneCallWhite } from "../../assets/index";
 function Footer() {
   return (
     <footer className="footer">
-      {/* <img src={logo}></img> */}
       <h1 className="footer__logo">سكلة</h1>
       <div className="footer__info">
-        <div className="footer__info__contact">
+        <div className="footer__info__contant">
           <h1>تواصل معنا</h1>
           <div className="footer__info__contant--email">
             <img src={emailWhite} alt="" className="icon" />

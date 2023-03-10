@@ -1,0 +1,35 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+}
+
+.profile__info {
+  width: 50vw;
+}
+.profile__avatar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.profile__avatar__contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.space {
+  margin: 1rem 0 1rem 0;
+}
+.user-avatar {
+  width: 156px;
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.profile--title {
+  margin-top: 2rem;
+}
