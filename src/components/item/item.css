@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 200px;
-  height: 325px;
+  /* height: 325px; */
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--color-bg-second);
@@ -35,7 +35,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
-  padding: 1rem;
+  padding: 0 1rem 0 0;
 }
 .item__card__info__title {
   font-size: 16px;

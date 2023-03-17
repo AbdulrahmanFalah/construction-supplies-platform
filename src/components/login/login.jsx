@@ -1,24 +1,70 @@
-import { React, useEffect } from "react";
+import { React, useState } from "react";
 import "./login.css";
-import { Button, Input } from "../index";
+import { Button, LoginInput } from "../index";
 import img from "../../assets/logpage.svg";
 import phoneCall from "../../assets//phone-call.svg";
-import password from "../../assets/padlock.svg";
+import passwordIcon from "../../assets/padlock.svg";
 import axios from "axios";
 
 function Login() {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handlePhoneNumberChange = (event) => {
+    setPhoneNumber(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    console.log(phoneNumber, password);
+    event.preventDefault();
+    axios
+      .post("https://sikkala.up.railway.app/api/auth", {
+        phoneNumber: phoneNumber,
+        password: password,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((result) => {
+        console.log(result);
+        if (result.status === 200) {
+          localStorage.setItem("token", result.data.token);
+          window.location.href = "/profile";
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div className="form">
       <div className="form__container">
         <h1 className="title">تسجيل الدخول</h1>
         <div className="form__container__input">
-          <Input type="text" text="رقم الهاتف" icon={phoneCall}></Input>
-          <Input type="password" text="كلمة المرور" icon={password}></Input>
+          <LoginInput
+            type="text"
+            text="رقم الهاتف"
+            icon={phoneCall}
+            onChange={handlePhoneNumberChange}
+          />
+          <LoginInput
+            type="password"
+            text="كلمة المرور"
+            icon={passwordIcon}
+            onChange={handlePasswordChange}
+          />
         </div>
-        <Button text="تسجيل الدخول"></Button>
+        <div onClick={handleSubmit}>
+          <Button text="تسجيل الدخول" />
+        </div>
+
         <p>
-          ليس لديك حساب؟
-          <a href="/register">سجل الآن </a>
+          ليس لديك حساب؟<a href="/register">سجل الآن</a>
         </p>
       </div>
       <img className="img--form" src={img} alt="img" />

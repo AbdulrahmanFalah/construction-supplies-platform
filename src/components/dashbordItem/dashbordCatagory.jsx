@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./category.css";
-import Item from "../../components/item/item.jsx";
-import { Button, Model } from "../../components/index.js";
 
-function Category() {
+import { Button, Model, DashbordItem } from "../../components/index.js";
+
+function DashbordCategory() {
   const categories = [
     "الكل",
     "اسمنت",
@@ -21,7 +20,7 @@ function Category() {
 
   return (
     <>
-      <h2 className="title">التصنيفات</h2>
+      <h2 className="title"></h2>
       <div className="category--container">
         <ul className="category--list">
           {categories.map((category) => (
@@ -42,7 +41,7 @@ function Category() {
             setShowModel(true);
           }}
         >
-          <Item selectedCategory={selectedCategory} />
+          <DashbordItem selectedCategory={selectedCategory} />
         </div>
       </div>
       <div className="button--container">
@@ -50,9 +49,10 @@ function Category() {
           <Button text="عرض الكل" />
         </Link>
       </div>
+
       {showModel && <Model closeModel={setShowModel} />}
     </>
   );
 }
 
-export default Category;
+export default DashbordCategory;

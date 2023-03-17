@@ -1,12 +1,13 @@
-import React from "react";
-import "./item.css";
+import React, { useState } from "react";
 import itemData from "../../store-data/item-data.json";
 import itemImg from "../../assets/cement.webp";
 import plus from "../../assets//plus.png";
 import minus from "../../assets///minus-sign.png";
+
 // import axios from "axios";
-function Item({ selectedCategory }) {
-  const counter = 1;
+function DashbordItem({ selectedCategory }) {
+  const [counter, setCounter] = useState(1);
+
   // axios.get("http://sikkala.onrender.com/api/product").then((res) => {
   //   console.log(res.data);
   // });
@@ -26,9 +27,23 @@ function Item({ selectedCategory }) {
             <span className="count--title">الكمية</span>
 
             <div className="flex">
-              <img src={plus} alt="" className="size" onClick={counter + 1} />
+              <img
+                src={plus}
+                alt=""
+                className="size"
+                onClick={() => {
+                  setCounter(counter + 1);
+                }}
+              />
               <span>{counter}</span>
-              <img src={minus} alt="" className="size" onClick={counter - 1} />
+              <img
+                src={minus}
+                alt=""
+                className="size"
+                onClick={() => {
+                  setCounter(counter - 1);
+                }}
+              />
             </div>
           </div>
 
@@ -41,4 +56,4 @@ function Item({ selectedCategory }) {
   return <div className="item--grid">{itemCards}</div>;
 }
 
-export default Item;
+export default DashbordItem;

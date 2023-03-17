@@ -56,6 +56,9 @@
   }
 }
 @media screen and (max-width: 380px) {
+  .info {
+    height: 45vh;
+  }
   .info__text h1 {
     font-size: 1rem;
   }

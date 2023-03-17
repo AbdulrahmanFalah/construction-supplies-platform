@@ -14,18 +14,14 @@ function Navbar() {
             <Link to="/login">
               <div className="login">
                 <p>تسجيل الدخول</p>
-              </div>
-            </Link>
-            <Link to="/register">
-              <div className="register">
-                <p>انشاء حساب</p>
                 <img
-                  className="register__arrow"
+                  className="login__arrow"
                   src={arrow}
-                  alt="arrow icon"
+                  alt="login icon"
                 ></img>
               </div>
             </Link>
+
             <Link to="/cart">
               <img className="navbar__cart" src={cart} alt="cart icon"></img>
             </Link>

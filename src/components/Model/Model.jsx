@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Model.css";
 import { Button } from "../index";
 import img from "../../assets//cement.webp";
@@ -6,12 +6,29 @@ import xMark from "../../assets//x-mark.svg";
 import storeImg from "../../assets//store-img.svg";
 import plus from "../../assets//plus.png";
 import minus from "../../assets///minus-sign.png";
+
 const Model = ({ closeModel }) => {
+  const modalRef = useRef(null);
+
+  // close the modal if clicking outside of it
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      closeModel(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  });
+
   return (
-    <div className="blur">
-      <div className="model">
+    <div className="blur" id="MyModal">
+      <div ref={modalRef} className="model">
         <img
-          className="icon exit"
+          className=" exit"
           src={xMark}
           alt=""
           onClick={() => {
@@ -44,12 +61,14 @@ const Model = ({ closeModel }) => {
             <p></p>
           </div>
           <div className="model__footer">
-            <Button text="اضافة الى السلة"></Button>
+            <Button text="اضافة  للسلة"></Button>
             <span></span>
             <Button text=" الشراء الان "></Button>
           </div>
         </div>
-        <img className="model--img" src={img} alt="" />
+        <div>
+          <img className="model--img" src={img} alt="" />
+        </div>
       </div>
     </div>
   );

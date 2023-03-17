@@ -3,7 +3,12 @@ import React from "react";
 import { Navbar, Button } from "../..//components/index";
 import { InfoLine } from "../../components/index";
 import idCard from "../../assets/id-card.svg";
-
+import {
+  phoneCallIcon,
+  passwordIcon,
+  emalIcon,
+  loctation,
+} from "../../assets/index";
 import userImg from "../../assets//user.jpg";
 import "./profile.css";
 function Profile() {
@@ -17,24 +22,27 @@ function Profile() {
           <InfoLine
             text="المنصور شارع 14 رمضان"
             title="العنوان"
-            icon={idCard}
+            icon={loctation}
           ></InfoLine>
           <InfoLine
             text=" 07788888888"
             title="رقم الهاتف"
-            icon={idCard}
+            icon={phoneCallIcon}
           ></InfoLine>
           <InfoLine
             text=" **************"
             title="كلمة المرور"
-            icon={idCard}
+            icon={passwordIcon}
           ></InfoLine>
           <InfoLine
             text=" example@gmail.com"
             title="البريد"
-            icon={idCard}
+            icon={emalIcon}
           ></InfoLine>
           <br />
+          <div className="logout">
+            <Button text="نسجيل الخروج"></Button>
+          </div>
         </div>
         <div className="profile__avatar">
           <div className="profile__avatar__contanier">
@@ -42,9 +50,6 @@ function Profile() {
             <Button text="تغيير"></Button>
             <div className="space">
               <Button text="حذف"></Button>
-            </div>
-            <div>
-              <Button text="نسجيل الخروج"></Button>
             </div>
           </div>
         </div>
