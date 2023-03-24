@@ -12,3 +12,4 @@ export { default as Login } from "./login/login";
 export { default as DashbordItem } from "./dashbordItem/dashbordItem";
 export { default as DashbordCategory } from "./dashbordItem/dashbordCatagory";
 export { default as Modal } from "./modal/modal";
+export { default as StoreContext } from "./stores/StoreContext";

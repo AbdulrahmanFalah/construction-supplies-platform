@@ -50,7 +50,7 @@
   border-radius: 2rem;
   padding: 0.5rem 0rem;
   width: 10vw;
-  animation: selected 1000ms ease-in-out;
+  animation: selected 500ms ease-in-out forwards;
 }
 
 .button--container {

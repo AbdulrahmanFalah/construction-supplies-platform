@@ -4,12 +4,15 @@ import itemData from "../../store-data/item-data.json";
 import itemImg from "../../assets/cement.webp";
 import plus from "../../assets//plus.png";
 import minus from "../../assets///minus-sign.png";
-// import axios from "axios";
+import axios from "axios";
 function Item({ selectedCategory }) {
+  // itemData = axios
+  //   .get("https://sikkala.onrender.com/api/product")
+  //   .then((res) => {
+  //     console.log(res.data);
+  //   });
+
   const counter = 1;
-  // axios.get("http://sikkala.onrender.com/api/product").then((res) => {
-  //   console.log(res.data);
-  // });
 
   let filteredItems = itemData.filter(
     (item) => item.catagory === selectedCategory || selectedCategory === "الكل"

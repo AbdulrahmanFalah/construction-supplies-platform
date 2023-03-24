@@ -1,26 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./stores.css";
 import { Link } from "react-router-dom";
 import phoneCallIcon from "../../assets/phone-call.svg";
 import locationIcon from "../../assets/location-icon.svg";
-import storeData from "../../store-data/store-data.json";
 import storeImg from "../../assets/store-img.png";
+import axios from "axios";
 
 function Stores() {
+  const [storeData, setStoreData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://sikkala.onrender.com/api/store")
+      .then((result) => {
+        console.log(result);
+        setStoreData(result.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  console.log(storeData);
+
   const storeElements = storeData.map((store) => {
     return (
-      <Link to="/store" key={store.id}>
+      <Link to={`/storeProfile/${store["_id"]}`} key={store.id}>
         <div className="store">
           <div className="store__info">
             <div className="store__info__text">
-              <h1>{store.storeName}</h1>
+              <h1>{store.name}</h1>
               <p>
                 <img
                   src={locationIcon}
                   alt="location icon"
                   className="store__info__location--icon"
                 />
-                {store.storeLocation}
+                {store.district}
               </p>
             </div>
             <div className="store__info__text">
