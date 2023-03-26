@@ -11,7 +11,26 @@ import {
 } from "../../assets/index";
 import userImg from "../../assets//user.jpg";
 import "./profile.css";
+import axios from "axios";
+import Cookies from "js-cookie";
+
 function Profile() {
+  const logout = () => {
+    axios
+      .get("https://sikkala.onrender.com/api/logout", {
+        headers: {
+          Authorization: `Bearer ${Cookies.get("token")} `,
+        },
+      })
+      .then((res) => {
+        console.log(res);
+        window.location.href = "/login";
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <>
       <Navbar></Navbar>
@@ -40,7 +59,7 @@ function Profile() {
             icon={emalIcon}
           ></InfoLine>
           <br />
-          <div className="logout">
+          <div className="logout" onClick={logout}>
             <Button text="نسجيل الخروج"></Button>
           </div>
         </div>

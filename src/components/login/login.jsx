@@ -5,6 +5,7 @@ import img from "../../assets/logpage.svg";
 import phoneCall from "../../assets//phone-call.svg";
 import passwordIcon from "../../assets/padlock.svg";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 function Login() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -32,8 +33,11 @@ function Login() {
       .then((result) => {
         console.log(result);
         if (result.status === 200) {
-          localStorage.setItem("token", result.data.token);
-          window.location.href = "/profile";
+          Cookies.set("access_token", result.data.accessToken);
+          Cookies.set("refresh_token", result.data.refreshToken);
+          console.log(Cookies.get("access_token"));
+          console.log(Cookies.get("refresh_token"));
+          window.location.replace("/profile");
         }
       })
       .catch((err) => {
